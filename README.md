@@ -9,5 +9,5 @@ according to city, month, and day supplied interactively by the user.
 
 ## License
 
-Udacity did not provide a license for their files, so it's probably their copyright plus whatever
-I will or will not complete on the bikeshare starter Python code.
+Original files Copyright 2018–2021 Udacity, Inc.
+My additions to documentation and code are [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
