@@ -50,7 +50,14 @@ def load_data(city, month, day):
     Returns:
         df - Pandas DataFrame containing city data filtered by month and day
     """
+    df=pd.read_csv(CITY_DATA[city], sep=',', parse_dates=['Start Time', 'End Time'])
+    if (month != 'all'):
+        month_index = MONTH_NAMES.index(month)
+        df = df[df['Start Time'].dt.month == month_index]
 
+    if (day != 'all'):
+        day_index = WEKKDAY_NAMES.index(day)
+        df = df[df['Start Time'].dt.weekday == day_index - 1]
 
     return df
 
