@@ -119,6 +119,11 @@ def user_stats(df):
 
 
 def main():
+    """Program Mainloop
+
+    This function is the program mainloop that interacts with the user,
+    gets the filtered data, and calculates statistics on them.
+    """
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
